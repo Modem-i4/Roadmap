@@ -9,8 +9,9 @@
     </author>
     <content src="index.html" />
     <access origin="*" />
+    <access launch-external="yes" origin="tel:*" />
+    <access launch-external="yes" origin="mailto:*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
     <preference name="SplashMaintainAspectRatio" value="true" />
-    <preference name="SplashScreenBackgroundColor" value="DarkRed" />
 </widget>

@@ -11,6 +11,8 @@ xmlns:cdv="http://cordova.apache.org/ns/1.0">
     </author>
     <content src="index.html" />
     <access origin="*" />
+	<access origin="tel:*" launch-external="yes"/>
+	<access origin="mailto:*" launch-external="yes"/>
 	<allow-intent href="http://*/*" />
 	<allow-intent href="https://*/*" />
 	<preference name="SplashMaintainAspectRatio" value="true" />
@@ -26,5 +28,6 @@ xmlns:cdv="http://cordova.apache.org/ns/1.0">
 		<preference name="hostname" value="localhost" />
 		
         <icon src="www/res/icon.png" />
+		<splash src="www/res/splash.jpg" />
 	</platform>
 </widget>

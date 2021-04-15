@@ -20,13 +20,13 @@
     "cordova-plugin-device": {
       "PACKAGE_NAME": "com.modemi4.roadmap"
     },
-    "cordova-plugin-splashscreen": {
-      "PACKAGE_NAME": "com.modemi4.roadmap"
-    },
     "cordova-plugin-camera": {
       "PACKAGE_NAME": "com.modemi4.roadmap"
     },
     "cordova-plugin-inappbrowser": {
+      "PACKAGE_NAME": "com.modemi4.roadmap"
+    },
+    "cordova-plugin-splashscreen": {
       "PACKAGE_NAME": "com.modemi4.roadmap"
     }
   },
