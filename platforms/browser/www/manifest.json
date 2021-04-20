@@ -1,11 +1,17 @@
 {
   "background_color": "#FFF",
   "display": "standalone",
-  "name": "Roadmap",
-  "short_name": "Roadmap",
+  "name": "Infra-STMK",
+  "short_name": "Infra-STMK",
   "version": "com.modemi4.roadmap",
-  "description": "A blank PhoneGap app.",
-  "author": "PhoneGap Team",
-  "icons": [],
+  "description": "Impulse setzen – Wege finden!",
+  "author": "Vasyl Chukhilevych",
+  "icons": [
+    {
+      "src": "www/res/icon.png",
+      "type": "image/png",
+      "sizes": "undefinedxundefined"
+    }
+  ],
   "start_url": "index.html"
 }

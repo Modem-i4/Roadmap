@@ -27,7 +27,7 @@ function homeLoad() {
 	function(response) {
 		$images = response;
 		if($images.length) {
-			$('#last-photos').html('<h2 class="center-text">Your previous commits</h2>');
+			$('#last-photos').html('<h2 class="center-text">Deine vorherigen Beiträge</h2>');
 		} else {
 			$('#last-photos').html('<div class="center-text no-commits"><img src="img/no-commits.svg"></div>');
 		}
@@ -59,10 +59,10 @@ function onPhotoSuccess(imageData){
 }
 function onFail(message){ 
 	if(message == "20") {
-		alert("You must allow access to your storage");
+		alert("Du musst den Zugriff auf deine Galerie erlauben");
 	}
 	else {
-		alert("Photo was not selected");
+		alert("Es wurde kein Foto ausgewählt");
 	}
 }
 
@@ -117,7 +117,7 @@ function centerMapToUser() {
 }
 function LaunchThanksPage() {
 	location.hash = "#home";
-	showMessage("Thanks!<br>Your post has been submited!");
+	showMessage("Herzlichen Dank,<br>dein Hinweis ist bei uns eingegangen");
 }
 
 
@@ -133,12 +133,12 @@ function validateForm(e) {
 	$('.ui-input-text').removeClass("input-error");
 
 	if(usernameInput.val().length < 5) {
-		$(".name-error").html("Please enter your full name");
+		$(".name-error").html("Bitte gib deinen vollen Namen ein");
 		usernameInput.parent().addClass("input-error");
 		valid = false;
 	}
 	if(emailInput.val().length < 5 && phoneInput.val().length < 5) {
-		$(".contact-error").html("Please enter your email or mobile phone");
+		$(".contact-error").html("Bitte gib entweder deine E-Mail Adresse oder deine Telefonnummer ein");
 		emailInput.parent().addClass("input-error");
 		phoneInput.parent().addClass("input-error");
 		valid = false;
@@ -175,15 +175,15 @@ function LaunchDetailsPage() {
 		</div><br><hr/>`;
 		if($post.comment) {
 			$html += `
-			<div class="center-text"><h3>Your comment:</h3></div>
+			<div class="center-text"><h3>Dein Hinweis:</h3></div>
 			<span>${$post.comment}</span>`;
 		}
 		else {
-			$html += `<span>You have not commented this photo</span>`;
+			$html += `<span>Bitte beschreibe uns dein Anliegen</span>`;
 		}
 		$('#post-details').html($html);
 		if($post.phone || $post.email || $post.instagram || $post.telegram) {
-			$html = `<div class="center-text"><h3>Your contacts:</h3></div>
+			$html = `<div class="center-text"><h3>Deine Kontaktdaten:</h3></div>
 						<div class="contacts">`;
 			if($post.phone)
 				$html += `<div class="phone">${$post.phone}</div>`;
@@ -230,7 +230,7 @@ function deletePost() {
 	$.post(`${DOMAIN}/deletePost.php`, {id: postId})
 	.success(function() {
 		location.hash = "#home";
-		showMessage("Your post has been deleted!");
+		showMessage("Dein Hinweis wurde gelöscht");
 		hideModal();
 	});
 }
@@ -253,5 +253,5 @@ $(function() {
 
 	$.shifter({maxWidth: "1024px"});
 	$(".shifter-page").on("swipeleft", openShifterWithSwipe);
-	$('.shifter-navigation a').click(() => $.shifter("close")); 
+	$('.nav-links a').click(() => $.shifter("close")); 
 });

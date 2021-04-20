@@ -1,13 +1,13 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.modemi4.roadmap" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0"
-xmlns:android="http://schemas.android.com/apk/www/res/android"
+xmlns:android="http://schemas.android.com/apk/res/android"
 xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>Roadmap</name>
+    <name>Infra-STMK</name>
     <description>
-        A blank PhoneGap app.
+        Impulse setzen – Wege finden!
     </description>
-    <author email="support@phonegap.com" href="http://phonegap.com">
-        PhoneGap Team
+    <author email="vasea.tshuh@gmail.com" href="https://www.struktur-stmk.at/">
+        Vasyl Chukhilevych
     </author>
     <content src="index.html" />
     <access origin="*" />
@@ -16,6 +16,8 @@ xmlns:cdv="http://cordova.apache.org/ns/1.0">
 	<allow-intent href="http://*/*" />
 	<allow-intent href="https://*/*" />
 	<preference name="SplashMaintainAspectRatio" value="true" />
+	<icon src="www/res/icon.png" />
+	<splash src="www/res/splash.png" />
 	<platform name="android">
 		<edit-config file="app/src/main/AndroidManifest.xml" mode="merge" target="/manifest/application">
 			<application android:usesCleartextTraffic="true" />
@@ -23,11 +25,12 @@ xmlns:cdv="http://cordova.apache.org/ns/1.0">
 		<config-file target="AndroidManifest.xml" parent="/manifest">
 			<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
 			<uses-permission android:name="android.permission.INTERNET"/>
+			<uses-permission android:name="android.permission.CAMERA" />
+			<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+			<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 		</config-file>
 		<preference name="scheme" value="app" />
 		<preference name="hostname" value="localhost" />
 		
-        <icon src="www/res/icon.png" />
-		<splash src="www/res/splash.jpg" />
 	</platform>
 </widget>

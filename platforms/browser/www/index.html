@@ -5,10 +5,10 @@
     <meta charset="utf-8" />
     <meta name="format-detection" content="telephone=no" />
     <meta name="msapplication-tap-highlight" content="no" />
-    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, target-densitydpi=device-dpi" />
     <!-- This is a wide open CSP declaration. To lock this down for production, see below. 
     <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *;" />-->
-	<title>WEGE FINDEN</title>
+	<title>Infra-STMK</title>
 	<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
 	<link rel="stylesheet" href="css/style.css" />
 	<link href="css/jquery.fs.shifter.min.css" rel="stylesheet" type="text/css" media="all" /> 
@@ -22,13 +22,13 @@
 			<div data-role="header" class="default-header">
 				<a data-role="none"></a>
 				<span class="ui-title">WEGE FINDEN</span>
-				<a href="#about" data-role="none" class="ui-btn-right"><img class="shifter-handle" src="img/menu.svg"></img></a>
+				<a data-role="none" class="ui-btn-right"><img class="shifter-handle" src="img/menu.svg"></img></a>
 			</div>
 
 			<div data-role="main" class="ui-content">
 				<div id="last-photos"><div class="center-text loading-spinner"><img src="img/load.gif"></div></div>
-				<button id="get-album-photo" data-icon="add">Upload photo</button>
-				<button id="get-camera-photo" data-icon="camera">Take photo</button>
+				<button id="get-album-photo" data-icon="add">Foto hochladen</button>
+				<button id="get-camera-photo" data-icon="camera">Foto aufnehmen</button>
 				<div class="modal-container hidden-animated">
 					<div class="modal">
 						<h3 class="center-text"></h1>
@@ -46,12 +46,12 @@
 			<div data-role="header" class="default-header">
 				<a href="#home" data-role="none"><img class="ui-btn-left" src="img/back.svg"></img></a>
 				<span class="ui-title">WEGE FINDEN</span>
-				<a href="#about" data-role="none" class="ui-btn-right"><img class="shifter-handle" src="img/menu.svg"></img></a>
+				<a data-role="none" class="ui-btn-right"><img class="shifter-handle" src="img/menu.svg"></img></a>
 			</div>
 
 			<div data-role="main" class="ui-content">
 				<div id="map-container">
-					<button id="accept-geo" class="ui-corner-all" data-role="none">Accept</button>
+					<button id="accept-geo" class="ui-corner-all" data-role="none">Bestätigen</button>
 					<img src="img/marker.png" id="center-marker"></img>
 					<div id="map"></div>
 				</div>
@@ -66,29 +66,29 @@
 			<div data-role="header" class="default-header">
 				<a href="#geolocation" data-role="none"><img class="ui-btn-left" src="img/back.svg"></img></a>
 				<span class="ui-title">WEGE FINDEN</span>
-				<a href="#about" data-role="none" class="ui-btn-right"><img class="shifter-handle" src="img/menu.svg"></img></a>
+				<a data-role="none" class="ui-btn-right"><img class="shifter-handle" src="img/menu.svg"></img></a>
 			</div>
 
 			<div data-role="main" class="ui-content">
 				<div class="loading-bg"><div class="center-text loading-spinner"><img src="img/load.gif"></div></div>
 				<form id="contact-info">
-					<h4>Your comment:</h4>
+					<h4>Beschreibe das Problem oder hinterlasse uns eine Nachricht</h4>
 					<textarea name="comment" class="comment" autocomplete="new-password"></textarea>
-					<h4>Extra information</h4>
+					<h4>Hinterlasse uns für Rückfragen deine Kontaktdaten</h4>
 					<span class="name-error error-label"></span>
-					<input type="text" name="username" class="username" placeholder="Your name" autocomplete="new-password">
-					<h4>How can we contact you?</h4>
+					<input type="text" name="username" class="username" placeholder="Dein Name" autocomplete="new-password">
+					<h4>Wie können wir dich erreichen?</h4>
 					<span class="contact-error error-label"></span>
-					<input type="text" name="phone" class="phone" placeholder="Phone" pattern="^[0-9 -\/\+]{8,16}$" autocomplete="new-password">
-					<input type="text" name="email" class="email" placeholder="E-mail" pattern='^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$' autocomplete="new-password">
-					<h5>Social networks</h5>
+					<input type="text" name="phone" class="phone" placeholder="Telefonnummer" pattern="^[0-9 -\/\+]{8,16}$" autocomplete="new-password">
+					<input type="text" name="email" class="email" placeholder="E-mail Adresse" pattern='^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$' autocomplete="new-password">
+					<h5>Weitere Kontaktmöglichkeiten</h5>
 					<input type="text" name="instagram" class="instagram" placeholder="Instagram" autocomplete="new-password">
 					<input type="text" name="telegram" class="telegram" placeholder="Telegram" autocomplete="new-password">
 					<input type="hidden" name="image">
 					<input type="hidden" name="lon">
 					<input type="hidden" name="lat">
 					<input type="hidden" name="uuid">
-					<input type="submit" value="Submit">
+					<input type="submit" value="Absenden">
 				</form>
 			</div>
 
@@ -100,7 +100,7 @@
 			<div data-role="header" class="default-header">
 				<a href="#home" data-role="none"><img class="ui-btn-left" src="img/back.svg"></img></a>
 				<span class="ui-title">WEGE FINDEN</span>
-				<a href="#about" data-role="none" class="ui-btn-right"><img class="shifter-handle" src="img/menu.svg"></img></a>
+				<a data-role="none" class="ui-btn-right"><img class="shifter-handle" src="img/menu.svg"></img></a>
 			</div>
 
 			<div data-role="main" class="ui-content">
@@ -126,7 +126,7 @@
 			<div data-role="header" class="default-header">
 				<a href="#home" data-role="none"><img class="ui-btn-left" src="img/back.svg"></img></a>
 				<span class="ui-title">WEGE FINDEN</span>
-				<a href="#about" data-role="none" class="ui-btn-right"><img class="shifter-handle" src="img/menu.svg"></img></a>
+				<a data-role="none" class="ui-btn-right"><img class="shifter-handle" src="img/menu.svg"></img></a>
 			</div>
 
 			<div data-role="main" class="ui-content">
@@ -156,7 +156,7 @@
 			<div data-role="header" class="default-header">
 				<a href="#home" data-role="none"><img class="ui-btn-left" src="img/back.svg"></img></a>
 				<span class="ui-title">WEGE FINDEN</span>
-				<a href="#about" data-role="none" class="ui-btn-right"><img class="shifter-handle" src="img/menu.svg"></img></a>
+				<a data-role="none" class="ui-btn-right"><img class="shifter-handle" src="img/menu.svg"></img></a>
 			</div>
 
 			<div data-role="main" class="ui-content">
@@ -164,9 +164,9 @@
 				<div id="details-content">
 					<div class="modal-container hidden-animated">
 						<div class="modal">
-							<h3 class="center-text">Are you sure you want to delete your post?</h1>
-							<button class="yes">Yes</button>
-							<button class="close">No</button>
+							<h3 class="center-text">Sind Sie sicher, dass Sie Ihren Beitrag löschen Foto/Hinweis?</h1>
+							<button class="yes">Ja</button>
+							<button class="close">Nein</button>
 						</div>
 					</div>
 					<div id="post-details"></div>	
@@ -174,7 +174,7 @@
 					<div id="post-map"></div>
 					<hr/>
 					<div id="post-contacts"></div>
-					<button id="remove-post" data-icon="remove">Remove submission</button>
+					<button id="remove-post" data-icon="remove">Foto/Hinweis löschen</button>
 				</div>
 			</div>
 
@@ -186,11 +186,13 @@
 	<nav class="shifter-navigation">
 		<ul>
 			<li><a><img src="img/FPO.svg"></a></li>
-			<li><a href="#home">Home</a></li>
-			<li><a href="#contact">Contact us</a></li>
-			<li><a href="#about">About the campaign</a></li>
+			<div class="nav-links">
+				<li><a href="#home">Start</a></li>
+				<li><a href="#about">Impulse setzen – Wege finden!</a></li>
+				<li><a href="#contact">Kontakt</a></li>
+			</div>
 		</ul>
-		<span>Freedom party of Austria</span>
+		<span>© FPÖ Steiermark</span>
 	</nav>
 
 	<script
