@@ -1,14 +1,5 @@
-# A Blank PhoneGap App
+# Roadmap
 
-## Usage
+##App for Freedom party of Austria 
 
-### PhoneGap CLI
-
-    $ phonegap create my-app --template blank
-
-### Desktop
-
-In your browser, open the file:
-
-    /www/index.html
-
+http://struktur-stmk.at/
